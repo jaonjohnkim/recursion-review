@@ -18,7 +18,7 @@ var getElementsByClassName = function(className) {
   //input : string that specifies class
   //output : an array of nodes that have the className
   let output = [];
-  let doc = document.body.childNodes;
+  let doc = document.childNodes;
 
 
   let classCheck = function (node) {
