@@ -31,15 +31,12 @@ var getElementsByClassName = function(className) {
     }
     
     if (node.childNodes) {
-      for (let j = 0; j < node.childNodes.length; j++) {
-        classCheck(node.childNodes[j]);
-      }
+      node.childNodes.forEach(classCheck);
     }
+
   };
   
-  for (let i = 0; i < doc.length; i++) {
-    classCheck(doc[i]);
-  }
+  doc.forEach(classCheck);
   
   return output;
 };
